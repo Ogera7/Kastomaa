@@ -1,0 +1,33 @@
+<div class="layout-column align-items-center justify-content-center mt-40">
+    <h4>Selected Customer Details</h4>
+    <section class="content layout-row align-items-center justify-content-center mt-10">
+      <table class="card content">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Gender</th>
+            <th>Pin Code</th>
+            <th>Country</th>
+            <th>State</th>
+          </tr>
+        </thead>
+        <tbody data-test-id="customer-details">
+          <tr class="slide-up-fade-in">
+            <!-- Render details dynamically using mergedCusDetails -->
+            <td>{{ mergedCusDetails?.firstName }}</td>
+            <td>{{ mergedCusDetails?.lastName }}</td>
+            <td>{{ mergedCusDetails?.age }}</td>
+            <td>{{ mergedCusDetails?.city }}</td>
+            <td>{{ mergedCusDetails?.gender }}</td>
+            <td>{{ mergedCusDetails?.pin }}</td>
+            <td>{{ mergedCusDetails?.country }}</td>
+            <td>{{ mergedCusDetails?.state }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  
